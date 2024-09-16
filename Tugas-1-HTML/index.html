@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>212410102066 - Zainul Muhaimin</title>
+	</head>
+	<body>
+		<h1>Form Pengisian Data Detail Kendaraan</h1>
+		<hr />
+		<form action="" method="post">
+			<label for="nomor_polisi">Nomor Polisi Kendaraan (Plat Nomor) *</label><br />
+			<input type="text" id="nomor_polisi" name="nomor_polisi" placeholder="P 1234 ZZ" required /><br /><br />
+
+			<label for="nomor_rangka">Nomor Rangka *</label><br />
+			<input type="text" id="nomor_rangka" name="nomor_rangka" placeholder="1HGBH41JXMN109186" required /><br /><br />
+
+			<label for="nomor_mesin">Nomor Mesin *</label><br />
+			<input type="text" id="nomor_mesin" name="nomor_mesin" placeholder="JF21E140042" required /><br /><br />
+
+			<label for="merek_tipe">Merek dan Tipe Kendaraan *</label><br />
+			<input type="text" id="merek_tipe" name="merek_tipe" placeholder="Honda Vario" required /><br /><br />
+
+			<label for="tahun_pembuatan">Tahun Pembuatan *</label><br />
+			<input type="number" min="1800" max="2099" id="tahun_pembuatan" name="tahun_pembuatan" placeholder="2021" required /><br /><br />
+
+			<label for="warna">Warna Kendaraan *</label><br />
+			<input type="color" id="warna" name="warna" required /><br /><br />
+
+			<label for="kapasitas_mesin">Kapasitas Mesin (CC) *</label><br />
+			<input type="number" id="kapasitas_mesin" name="kapasitas_mesin" placeholder="125" required /><br /><br />
+
+			<label for="jenis_kendaraan">Jenis Kendaraan *</label><br />
+			<select id="jenis_kendaraan" name="jenis_kendaraan" required>
+				<option value="motor">Motor</option>
+				<option value="mobil">Mobil</option>
+				<option value="bus">Bus</option>
+				<option value="truk">Truk</option>
+			</select>
+			<br /><br />
+
+			<label for="nama_pemilik">Nama Pemilik Kendaraan *</label><br />
+			<input type="text" id="nama_pemilik" name="nama_pemilik" placeholder="Zainul Muhaimin" required /><br /><br />
+
+			<label for="alamat_pemilik">Alamat Pemilik *</label><br />
+			<input type="text" id="alamat_pemilik" name="alamat_pemilik" placeholder="Jawa Timur" required /><br /><br />
+
+			<label for="nomor_bpkb">Nomor BPKB (Buku Pemilik Kendaraan Bermotor) *</label><br />
+			<input type="text" id="nomor_bpkb" name="nomor_bpkb" pattern="[0-9]{7,20}" title="Hanya Angka, min 7 digit, max 20 digit" placeholder="01234567" required /><br /><br />
+
+			<label for="nomor_stnk">Nomor STNK (Surat Tanda Nomor Kendaraan) *</label><br />
+			<input type="text" id="nomor_stnk" name="nomor_stnk" placeholder="112213453" pattern="[0-9]{7,20}" title="Hanya Angka, min 7 digit, max 20 digit" required /><br /><br />
+
+			<button type="submit">Simpan</button>
+		</form>
+	</body>
+</html>
