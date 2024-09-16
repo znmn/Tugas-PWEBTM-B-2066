@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>212410102066 - Zainul Muhaimin</title>
+	</head>
+	<body>
+		<div class="container mt-4 mb-4 bg-light rounded-4">
+			<header class="text-center pt-3">
+				<div class="container-fluid">
+					<img src="img/vehicle.png" alt="vehicle" class="img-fluid" />
+				</div>
+				<h4>Form Pengisian Data Detail Kendaraan</h4>
+			</header>
+			<hr />
+			<form class="container-fluid p-3" action="" method="post">
+				<table class="table table-bordered border-primary table-hover table-light rounded-3">
+					<tr>
+						<td class="col-5"><label class="form-label fw-medium" for="nomor_polisi">Nomor Polisi Kendaraan (Plat Nomor) *</label></td>
+						<td class="col-7"><input class="form-control" type="text" id="nomor_polisi" name="nomor_polisi" placeholder="P 1234 ZZ" required /></td>
+					</tr>
+					<tr>
+						<td class="col-5"><label class="form-label fw-medium" for="nomor_rangka">Nomor Rangka *</label></td>
+						<td class="col-7"><input class="form-control" type="text" id="nomor_rangka" name="nomor_rangka" placeholder="1HGBH41JXMN109186" required /></td>
+					</tr>
+					<tr>
+						<td class="col-5"><label class="form-label fw-medium" for="nomor_mesin">Nomor Mesin *</label></td>
+						<td class="col-7"><input class="form-control" type="text" id="nomor_mesin" name="nomor_mesin" placeholder="JF21E140042" required /></td>
+					</tr>
+					<tr>
+						<td class="col-5"><label class="form-label fw-medium" for="merek_tipe">Merek dan Tipe Kendaraan *</label></td>
+						<td class="col-7"><input class="form-control" type="text" id="merek_tipe" name="merek_tipe" placeholder="Honda Vario" required /></td>
+					</tr>
+					<tr>
+						<td class="col-5"><label class="form-label fw-medium" for="tahun_pembuatan">Tahun Pembuatan *</label></td>
+						<td class="col-7"><input class="form-control" type="number" min="1800" max="2099" id="tahun_pembuatan" name="tahun_pembuatan" placeholder="2021" required /></td>
+					</tr>
+					<tr>
+						<td class="col-5"><label class="form-label fw-medium" for="warna">Warna Kendaraan *</label></td>
+						<td class="col-7"><input class="form-control-color" type="color" id="warna" name="warna" required /></td>
+					</tr>
+					<tr>
+						<td class="col-5"><label class="form-label fw-medium" for="kapasitas_mesin">Kapasitas Mesin (CC) *</label></td>
+						<td class="col-7"><input class="form-control" type="number" id="kapasitas_mesin" name="kapasitas_mesin" placeholder="125" required /></td>
+					</tr>
+					<tr>
+						<td class="col-5"><label class="form-label fw-medium" for="jenis_kendaraan">Jenis Kendaraan *</label></td>
+						<td class="col-7">
+							<select class="form-select" id="jenis_kendaraan" name="jenis_kendaraan" required>
+								<option value="motor">Motor</option>
+								<option value="mobil">Mobil</option>
+								<option value="bus">Bus</option>
+								<option value="truk">Truk</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-5"><label class="form-label fw-medium" for="nama_pemilik">Nama Pemilik Kendaraan *</label></td>
+						<td class="col-7"><input class="form-control" type="text" id="nama_pemilik" name="nama_pemilik" placeholder="Zainul Muhaimin" required /></td>
+					</tr>
+					<tr>
+						<td class="col-5"><label class="form-label fw-medium" for="alamat_pemilik">Alamat Pemilik *</label></td>
+						<td class="col-7"><input class="form-control" type="text" id="alamat_pemilik" name="alamat_pemilik" placeholder="Jawa Timur" required /></td>
+					</tr>
+					<tr>
+						<td class="col-5"><label class="form-label fw-medium" for="nomor_bpkb">Nomor BPKB (Buku Pemilik Kendaraan Bermotor) *</label></td>
+						<td class="col-7">
+							<input class="form-control" type="text" id="nomor_bpkb" name="nomor_bpkb" pattern="[0-9]{7,20}" title="Hanya Angka, min 7 digit, max 20 digit" placeholder="01234567" required />
+						</td>
+					</tr>
+					<tr>
+						<td class="col-5"><label class="form-label fw-medium" for="nomor_stnk">Nomor STNK (Surat Tanda Nomor Kendaraan) *</label></td>
+						<td class="col-7">
+							<input class="form-control" type="text" id="nomor_stnk" name="nomor_stnk" placeholder="112213453" pattern="[0-9]{7,20}" title="Hanya Angka, min 7 digit, max 20 digit" required />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="col-12">
+							<div class="d-flex justify-content-center">
+								<button type="submit" class="btn btn-primary w-75 rounded-5">
+									<span>Simpan</span>
+								</button>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
