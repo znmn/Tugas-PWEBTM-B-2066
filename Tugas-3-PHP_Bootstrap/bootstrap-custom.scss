@@ -1,0 +1,25 @@
+@import "node_modules/bootstrap/scss/functions.scss";
+
+$white: #ffffff;
+$light: #f4f7f7;
+$dark: #24344e;
+$primary: #6ac1d4;
+$secondary: #3c8ba6;
+$info: #444698;
+$success: #529400;
+$warning: #ccab46;
+$danger: #ea0062;
+
+@import "node_modules/bootstrap/scss/variables.scss";
+@import "node_modules/bootstrap/scss/mixins.scss";
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+	font-family: "Poppins", sans-serif;
+}
+tr {
+	@extend .d-flex;
+}
+
